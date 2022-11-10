@@ -10,11 +10,8 @@ export class ProgressBar extends Component {
 
   render() {
     const { isActive } = this.props;
-    return (
-      <div block="ProgressBar">
-        <div block="ProgressBar" elem="Progress" mods={{ isActive }} />
-      </div>
-    );
+
+    return <div block="ProgressBar" mods={{ isActive }} />
   }
 }
 
