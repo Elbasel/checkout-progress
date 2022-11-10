@@ -17,14 +17,10 @@ export class Checkout extends SourceCheckout {
         const stepTitles = [];
         Object.values(this.stepMap).forEach((step) => stepTitles.push(step.title));
 
-        let { number } = this.stepMap[checkoutStep];
-        
-        // If a step doesn't have a number, then it's the last step
-        if (!number) number = Object.keys(this.stepMap).length 
-        
+        const currentStepIndex = stepTitles.indexOf(this.stepMap[checkoutStep].title)
 
         return (
-            <CheckoutProgress stepTitles={stepTitles} currentStepIndex={ number - 1 } />
+            <CheckoutProgress stepTitles={ stepTitles } currentStepIndex={ currentStepIndex } />
         )
     }
 

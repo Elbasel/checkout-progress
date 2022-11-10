@@ -7,7 +7,7 @@ export class CheckoutProgress extends Component {
 
     static propTypes = {
         stepTitles: PropTypes.arrayOf(PropTypes.string).isRequired,
-        currentStepIndex: PropTypes.number.isRequired
+        currentStepIndex: PropTypes.string.isRequired
     };
   render() {
     const { stepTitles, currentStepIndex } = this.props;
