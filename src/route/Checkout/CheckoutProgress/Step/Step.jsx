@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 import './Step.style';
 
-/** @namespace ScandiAssignment/Route/Checkout/CheckoutProgress/Step */
 export class Step extends Component {
     static propTypes = {
         isActive: PropTypes.bool.isRequired,
@@ -14,10 +13,10 @@ export class Step extends Component {
     render() {
         const { isActive, stepTitle, stepNumber } = this.props;
         return (
-      <div block="Step" mods={ { isActive } }>
-          <span block="Step" elem="Number">{ stepNumber }</span>
-          <span block="Step" elem="Title" mods={ { isActive } }>{ stepTitle }</span>
-      </div>
+            <div block="Step" mods={{ isActive }}>
+                <span block="Step" elem="Number">{stepNumber}</span>
+                <span block="Step" elem="Title" mods={{ isActive }}>{stepTitle}</span>
+            </div>
         );
     }
 }

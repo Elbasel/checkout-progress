@@ -1,1 +1,1 @@
-export {CheckoutProgress as default} from './CheckoutProgress'
+export { CheckoutProgress as default } from "./CheckoutProgress";

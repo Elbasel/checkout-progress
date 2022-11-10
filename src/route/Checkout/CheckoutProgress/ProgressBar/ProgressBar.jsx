@@ -3,19 +3,18 @@ import React, { Component } from 'react';
 
 import './ProgressBar.style';
 
-/** @namespace ScandiAssignment/Route/Checkout/CheckoutProgress/ProgressBar */
 export class ProgressBar extends Component {
   static propTypes = {
-      isActive: PropTypes.bool.isRequired
+    isActive: PropTypes.bool.isRequired
   };
 
   render() {
-      const { isActive } = this.props;
-      return (
+    const { isActive } = this.props;
+    return (
       <div block="ProgressBar">
-        <div block="ProgressBar" elem="Progress" mods={ { isActive } } />
+        <div block="ProgressBar" elem="Progress" mods={{ isActive }} />
       </div>
-      );
+    );
   }
 }
 

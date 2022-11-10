@@ -1,7 +1,6 @@
 .Checkout {
-
-    // Make room for checkout progress component
-    &::before {
-        content: initial;
-    }
+  // Make room for checkout progress component
+  &::before {
+    content: initial;
+  }
 }

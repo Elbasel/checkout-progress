@@ -1,24 +1,17 @@
+// Used in child components
 :root {
-    --step-not-active-color: #dbdbdb;
-    --step-active-color: var(--primary-base-color);
+  --step-not-active-color: #dbdbdb;
+  --step-active-color: var(--primary-base-color);
 }
-
 
 .CheckoutProgress {
-    margin-block-end: 20px;
+  margin-block-end: 20px;
 
-    &-ProgressBar {
-        padding-block-start: 15px;
-        padding-block-end: 45px;
-        background-color: #f3f3f3;
-        display: flex;
-        align-items: center;
-    }
-
-    &-Title {
-        font-size: 35px;
-        margin-block-start: 30px;
-        padding-inline-start: 15px;
-    }
+  &-ProgressBar {
+    padding-block-start: 15px;
+    padding-block-end: 45px;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+  }
 }
-
