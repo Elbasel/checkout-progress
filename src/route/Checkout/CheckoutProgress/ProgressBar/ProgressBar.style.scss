@@ -1,0 +1,31 @@
+.ProgressBar {
+    height: 5px;   
+    background-color: var(--step-not-active-color);
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+
+    &:first-child {
+        border-top-left-radius: initial;
+        border-bottom-left-radius: initial;
+    }
+
+    &:last-child {
+        border-top-right-radius: initial;
+        border-bottom-right-radius: initial;
+    }
+
+
+    &-Progress {
+        background-color: var(--step-active-color);
+        height: 15px;
+        width: 0;
+        transition: width 2s ease-in-out;
+
+        &_isActive {
+            width: 100%;
+        }
+    }
+}
+
+
