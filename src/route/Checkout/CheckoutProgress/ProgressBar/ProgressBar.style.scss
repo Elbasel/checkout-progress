@@ -11,12 +11,15 @@
   flex: 1;
   border-radius: 12px;
   transition: all 2s ease-in-out;
-  // overflow: hidden;
 
-  &:first-child,
-  :last-child {
+  &:first-child {
     border-top-left-radius: initial;
     border-bottom-left-radius: initial;
+  }
+
+  &:last-child {
+    border-top-right-radius: initial;
+    border-bottom-right-radius: initial;
   }
 
   &_isActive {
