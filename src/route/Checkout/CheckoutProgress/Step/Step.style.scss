@@ -1,31 +1,35 @@
 .Step {
-    $dimension: 35px;
+  $dimension: 35px;
 
-    margin-inline: 15px;
-    width: $dimension;
-    height: $dimension;
-    border-radius: 50%;
-    background-color: var(--step-not-active-color);
-    color: #9c9c9c;
-    display: grid;
-    place-items: center;
-    position: relative;
-    font-size: 16px;
+  margin-inline: 15px;
+  width: $dimension;
+  height: $dimension;
+  border-radius: 50%;
+  background-color: var(--step-not-active-color);
+  color: #9c9c9c;
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-size: 16px;
+  transition: all 300ms ease-in-out;
+  transition-delay: 2s;
+
+  &_isActive {
+    background-color: var(--step-active-color);
+    color: white;
+  }
+
+  &-Title {
+    position: absolute;
+    inset-block-start: 40px;
+    min-width: max-content;
+    color: #aeaeae;
+    font-weight: bold;
+    transition: color 300ms ease-in-out;
+    transition-delay: 2s;
 
     &_isActive {
-        background-color: var(--step-active-color);
-        color: white;
+      color: black;
     }
-
-    &-Title {
-        position: absolute;
-        inset-block-start: 40px;
-        min-width: max-content;
-        color: #aeaeae;
-        font-weight: bold;
-
-        &_isActive {
-            color: black;
-        }
-    }
+  }
 }
