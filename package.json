@@ -11,8 +11,10 @@
         "@tilework/mosaic-craco": "0.0.5",
         "@types/node": "18.7.15",
         "@types/react": "18.0.17",
+        "global": "^4.4.0",
         "postcss": "8.4.5",
-        "react-redux": "8.0.2"
+        "react-redux": "8.0.2",
+        "scandipwa-cli": "^0.3.21"
     },
     "scandipwa": {
         "type": "theme",
